@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumate - Los Restauradores</title>
+    <!-- Google Fonts - Caprasimo -->
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/Capa 0.png" alt="Logo pequeño" class="logo-navbar">
+                <span class="nombre-partido">LOS RESTAURADORES</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Quienes somos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Integrantes.html">Integrantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Views/Sumate.html">Sumate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <section class="formulario-sumate">
+            <h1 class="text-center mb-5 titulo-seccion">¡Sumate a nuestro proyecto!</h1>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card-form">
+                        <h2 class="mb-4">Formulario de adhesión</h2>
+                        <form id="formSumate" action="https://formsubmit.co/hernydemarmol88@gmail.com" method="POST">
+
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo*</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email*</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" name="telefono">
+    </div>
+    <div class="mb-3">
+        <label for="localidad" class="form-label">Localidad*</label>
+        <input type="text" class="form-control" id="localidad" name="localidad" required>
+    </div>
+    <div class="mb-3">
+        <label for="interes" class="form-label">¿Cómo te gustaría participar?*</label>
+        <select class="form-select" id="interes" name="interes" required>
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option value="voluntario">Como voluntario</option>
+            <option value="afiliado">Como afiliado</option>
+            <option value="donador">Como donador</option>
+            <option value="colaborador">Como colaborador</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje (opcional)</label>
+        <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+    </div>
+
+    <!-- Aquí agregá el div para mostrar el error -->
+    <div id="error-message" class="alert alert-danger" style="display: none;" role="alert">
+        Hubo un error al enviar tu solicitud. Por favor, intentá nuevamente.
+    </div>
+
+    <button type="submit" class="btn btn-enviar">Enviar solicitud</button>
+</form>
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="info-sumate">
+                        <h2 class="mb-4">Otras formas de participación</h2>
+                        <div class="opcion-participacion">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Voluntariado</h3>
+                            <p>Participa en nuestras actividades y campañas como voluntario.</p>
+                        </div>
+                        <div class="opcion-participacion">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <h3>Donaciones</h3>
+                            <p>Apoya económicamente nuestro movimiento político.</p>
+                        </div>
+                        <div class="opcion-participacion">
+                            <i class="fas fa-share-alt"></i>
+                            <h3>Difusión</h3>
+                            <p>Ayúdanos a compartir nuestras propuestas en redes sociales.</p>
+                        </div>
+                        <div class="contacto-sumate mt-4">
+                            <h3>Contacto directo</h3>
+                            <p><i class="fas fa-envelope"></i> sumate@losrestauradores.org</p>
+                            <p><i class="fas fa-phone"></i> (011) 1234-5678</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-fijo">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Los Restauradores</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="redes-sociales">
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>

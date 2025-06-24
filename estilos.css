@@ -1,0 +1,218 @@
+/* FONDO */
+body {
+    background: url('https://img.pikbest.com/wp/202343/light-blue-textured-background-drawing-watercolor-texture_9939985.jpg!bw700') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+/* LOGO NAVBAR (PEQUEÑO) */
+.logo-navbar {
+    width: 50px !important;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+.logo-navbar:hover {
+    transform: scale(1.1);
+}
+
+/* LOGO PRINCIPAL (GRANDE) */
+.logo-principal {
+    width: 300px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+}
+
+/* NOMBRE DEL PARTIDO */
+.nombre-partido {
+    font-family: 'Caprasimo', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* FOOTER FIJO CON REDES */
+.footer-fijo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.95);
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    z-index: 1000;
+}
+.redes-sociales a {
+    color: #005bb5;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.redes-sociales a:hover {
+    color: #1da1f2;
+    transform: scale(1.2);
+}
+
+/* TEXTO BLANCO CON SOMBRA */
+.text-white {
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nombre-partido {
+        font-size: 1.4rem;
+    }
+    .logo-navbar {
+        width: 40px !important;
+    }
+    .redes-sociales a {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilos específicos para eventos */
+.eventos-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.evento-card {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+}
+
+.evento-fecha {
+    background-color: #005bb5;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin-right: 1.5rem;
+    min-width: 70px;
+    height: max-content;
+    font-weight: bold;
+}
+
+.evento-info {
+    flex: 1;
+}
+
+.evento-info h3 {
+    color: #005bb5;
+    margin-bottom: 0.5rem;
+}
+
+.evento-info p {
+    margin-bottom: 0.3rem;
+}
+
+.evento-info i {
+    margin-right: 5px;
+    color: #005bb5;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .evento-card {
+        flex-direction: column;
+    }
+    
+    .evento-fecha {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos específicos para sumate.html */
+.formulario-sumate {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.card-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.info-sumate {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.opcion-participacion {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.opcion-participacion i {
+    font-size: 1.5rem;
+    color: #005bb5;
+    margin-bottom: 0.5rem;
+}
+
+.opcion-participacion h3 {
+    color: #005bb5;
+    font-size: 1.2rem;
+}
+
+.btn-enviar {
+    background-color: #005bb5;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+}
+
+.contacto-sumate i {
+    color: #005bb5;
+    margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .info-sumate {
+        margin-top: 2rem;
+    }
+}

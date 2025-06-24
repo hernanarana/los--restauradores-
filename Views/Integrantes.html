@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes - Los Restauradores</title>
+    <!-- Google Fonts - Caprasimo -->
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* FONDO ACUARELA */
+        body {
+            background: url('https://img.pikbest.com/wp/202343/light-blue-textured-background-drawing-watercolor-texture_9939985.jpg!bw700') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            padding-bottom: 100px; /* Espacio para el footer */
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        main {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        /* LOGO PEQUEÑO EN NAVBAR */
+        .logo-navbar {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        /* NOMBRE DEL PARTIDO */
+        .nombre-partido {
+            font-family: 'Caprasimo', cursive;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* FOOTER FIJO (Versión mejorada) */
+        .footer-fijo {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255,255,255,0.95);
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+            z-index: 1000;
+        }
+
+        .redes-sociales a {
+            color: #005bb5;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .redes-sociales a:hover {
+            color: #1da1f2;
+            transform: scale(1.2);
+        }
+
+        /* TARJETAS DE INTEGRANTES */
+        .card-integrante {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+        }
+
+        .card-integrante:hover {
+            transform: translateY(-5px);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nombre-partido {
+                font-size: 1.4rem;
+            }
+            .logo-navbar {
+                width: 40px;
+            }
+            main {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/Capa 0.png" alt="Logo pequeño" class="logo-navbar">
+                <span class="nombre-partido">LOS RESTAURADORES</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Quienes somos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../Views/Integrantes.html">Integrantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Galeria.html">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Eventos.html">Eventos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Sumate.html">Sumate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        <section>
+            <h1 class="text-center mb-5">Nuestro Equipo</h1>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Integrante 1 -->
+                <div class="col">
+                    <div class="card card-integrante shadow">
+                        <img src="./img/integrante1.jpg" class="card-img-top" alt="Juan Pérez">
+                        <div class="card-body">
+                            <h3 class="card-title">Juan Pérez</h3>
+                            <p class="text-muted">Presidente</p>
+                            <p class="card-text">Economista especializado en políticas públicas con 15 años de experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Integrante 2 -->
+                <div class="col">
+                    <div class="card card-integrante shadow">
+                        <img src="./img/integrante2.jpg" class="card-img-top" alt="María Gómez">
+                        <div class="card-body">
+                            <h3 class="card-title">María Gómez</h3>
+                            <p class="text-muted">Vicepresidenta</p>
+                            <p class="card-text">Especialista en desarrollo social y educación inclusiva.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Integrante 3 -->
+                <div class="col">
+                    <div class="card card-integrante shadow">
+                        <img src="./img/integrante3.jpg" class="card-img-top" alt="Carlos Rodríguez">
+                        <div class="card-body">
+                            <h3 class="card-title">Carlos Rodríguez</h3>
+                            <p class="text-muted">Secretario General</p>
+                            <p class="card-text">Abogado constitucionalista y experto en transparencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER FIJO -->
+    <footer class="footer-fijo">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Los Restauradores</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="redes-sociales">
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
